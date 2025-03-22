@@ -1,0 +1,28 @@
+/* Root Colors (adjust based on your design) */
+:root {
+    --primary-color: #d4e4bc; /* Tea Green */
+    --secondary-color: #96acb7; /* Cadet Gray */
+    --text-color: #36558f; /* Tinmn Blue */
+    --background-color: #40376e; /* Deift Blue */
+}
+
+
+a {
+    text-decoration: none; /* This may hneed to be moved some where else*/
+}
+
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
