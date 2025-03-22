@@ -26,3 +26,9 @@ body {
     width: 100%;
     height: auto;
 }
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 10px;
+}
