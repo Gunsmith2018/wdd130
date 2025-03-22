@@ -21,11 +21,16 @@ body {
     padding: 0;
 }
 
-.hero img{
+#hero img{
     display: block;
     width: 100%;
     height: auto;
 }
+
+#hero article img {
+    width: 200px;
+}
+
 
 nav a {
     text-decoration: none;
