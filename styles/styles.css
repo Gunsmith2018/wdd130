@@ -25,3 +25,23 @@ p {
     padding: 10px;
 }
 
+header, footer {
+max-width: 840px;
+margin: 0 auto;
+}
+
+nav{
+background-color: steelblue;
+padding: 1rem;
+display: flex;
+justify-content: spce-evenly;
+align-items: center;
+}
+
+nav a { 
+    display: block;
+    padding: .5rem;
+    font-size: 700;
+    font-weight: 700;
+    color: #fff;    /* shorthand for white */
+}
