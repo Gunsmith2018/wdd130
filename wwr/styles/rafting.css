@@ -1,9 +1,10 @@
-/* Root Colors */  /* This color scheme needs to be changed. It is not easy to read */
+/* Root Colors */
 :root {
-  --primary-color: #d4e4bc; /* Tea Green */
-  --secondary-color: #96acb7; /* Cadet Gray */
-  --text-color: #36558f; /* Tinman Blue */
-  --background-color: #BEE7E8; /* Mint Green */
+  --primary-color: #0077cc; /* Improved contrast - Deep Blue */
+  --secondary-color: #ffffff; /* White for better readability */
+  --text-color: #333333; /* Dark Gray for better contrast */
+  --background-color: #f4f4f4; /* Light Gray for subtle background */
+  --accent-color: #ff9800; /* Bright accent for highlights */
   --padding: 10px;
 }
 
@@ -18,12 +19,12 @@ body {
 
 /* Header Styles */
 header {
-  display: grid;
-  grid-template-columns: auto 1fr auto; /* Logo (img), Title (h1), Nav */
-  align-items: center; /* Flexbox command*/
-  gap: 10px;
+  display: flex; /* Simplified layout with Flexbox */
+  justify-content: space-between;
+  align-items: center;
   padding: var(--padding);
-  
+  background: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 header img {
@@ -37,26 +38,18 @@ nav {
   gap: 20px;
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav ul li {
-  margin: 0 10px;
-}
-
 nav a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   padding: var(--padding);
-  transition: color 0.3s;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
+  background: var(--accent-color);
   color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
 /* Hero Section */
@@ -64,32 +57,92 @@ nav a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: var(--padding);
-}
-
-.hero-imge {
-  order: 1; 
+  gap: 20px;
+  padding: 40px var(--padding);
+  background: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 #hero img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-#hero article {
-  width: 80%;
-  margin: 0 auto;
-  background-color: var(--primary-color);
-  padding: var(--padding);
-}
-
-h1 {
-  order: 2;
+#hero h1 {
+  font-size: 2.5rem;
   text-align: center;
-  margin-top: 20px;
 }
 
+/* History Section */
+#history {
+  padding: 20px var(--padding);
+}
 
+#history img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#history p {
+  line-height: 1.8;
+  margin: 20px 0;
+  text-align: justify;
+}
+
+/* Adventure Section */
+#adventure {
+  padding: 20px var(--padding);
+}
+
+#adventure div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+#adventure img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+#adventure img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+footer a {
+  margin: 5px;
+  transition: transform 0.3s;
+}
+
+footer a:hover {
+  transform: scale(1.2);
+}
+
+footer img {
+  height: 30px;
+  width: 30px;
+}
 
 
 
