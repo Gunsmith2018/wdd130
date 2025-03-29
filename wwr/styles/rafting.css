@@ -60,9 +60,9 @@ nav a:hover {
 
 /* Hero Section */
 #hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   align-items: center;
+  justify-content: flex-end;
   padding: var(--padding);
 }
 
