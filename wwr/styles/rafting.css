@@ -20,7 +20,7 @@ body {
 header {
   display: grid;
   grid-template-columns: auto 1fr auto; /* Logo (img), Title (h1), Nav */
-  align-items: flex-end; /* Flexbox command*/
+  align-items: center; /* Flexbox command*/
   gap: 10px;
   padding: var(--padding);
 }
