@@ -62,7 +62,9 @@ nav a:hover {
 #hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
+  justify-content: space-around;
+  align-items: stretch;
+
   padding: var(--padding);
 }
 
