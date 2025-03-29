@@ -1,4 +1,4 @@
-/* Root Colors */
+/* Root Colors */  /* This color scheme needs to be changed. It is not easy to read */
 :root {
   --primary-color: #d4e4bc; /* Tea Green */
   --secondary-color: #96acb7; /* Cadet Gray */
@@ -20,7 +20,7 @@ body {
 header {
   display: grid;
   grid-template-columns: auto 1fr auto; /* Logo (img), Title (h1), Nav */
-  align-items: center;
+  align-items: flex-end; /* Flexbox command*/
   gap: 10px;
   padding: var(--padding);
 }
