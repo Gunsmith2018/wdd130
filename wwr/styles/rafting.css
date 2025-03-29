@@ -41,6 +41,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: flex-end;
 }
 
 nav ul li {
@@ -60,9 +61,9 @@ nav a:hover {
 
 /* Hero Section */
 #hero {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-content: flex-end;
   padding: var(--padding);
 }
 
