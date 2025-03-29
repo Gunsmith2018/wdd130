@@ -23,7 +23,7 @@ header {
   align-items: center; /* Flexbox command*/
   gap: 10px;
   padding: var(--padding);
-
+  
 }
 
 header img {
@@ -65,9 +65,10 @@ nav a:hover {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   padding: var(--padding);
-  position: relative; /* or absolute */
-  right: 40; /* Adjust based on the direction */
-  top: 20px;
+}
+
+.hero-imge {
+  order: 1; 
 }
 
 #hero img {
@@ -83,6 +84,7 @@ nav a:hover {
 }
 
 h1 {
+  order: 2;
   text-align: center;
   margin-top: 20px;
 }
