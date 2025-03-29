@@ -1,103 +1,86 @@
-header {
-    display: grid;
-    grid-template-columns: auto 1fr auto; /* Logo (img), Title (h1), Nav */
-    align-items: center; /* Center items vertically */
-    gap: 10px; /* Optional: Adds space between the grid items */
-    padding: 10px;
-  }
-  
-  header img {
-    max-height: 60px; /* Adjust as needed */
-  }
-  
-  header nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header nav ul li {
-    margin: 0 10px; /* Space between links */
-  }
-  
-  header nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-
-
-
 /* Root Colors */
 :root {
-    --primary-color: #d4e4bc; /* Tea Green */
-    --secondary-color: #96acb7; /* Cadet Gray */
-    --text-color: #36558f; /* Tinmn Blue */
-    --background-color: #40376e; /* Deift Blue */
-    --padding: 10px;
+  --primary-color: #d4e4bc; /* Tea Green */
+  --secondary-color: #96acb7; /* Cadet Gray */
+  --text-color: #36558f; /* Tinman Blue */
+  --background-color: #40376e; /* Delft Blue */
+  --padding: 10px;
 }
 
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--text-color);
-    background-color: var(--background-color);
-    margin: 0;
-    padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
 }
 
-#hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Adjust layout */
-    align-items: center;
-    padding: var(--padding);
+/* Header Styles */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* Logo (img), Title (h1), Nav */
+  align-items: center;
+  gap: 10px;
+  padding: var(--padding);
 }
 
-#hero img {
-    width: 100%;
-    height: auto;
-}
-
-#hero article {
-    width: 80%;
-    margin: 0 auto;
-    background-color: rgba(212, 228, 188, 1); /* Fixed background color */
-    padding: var(--padding);
-}
-
-h1 {
-    text-align: center;
-    margin-top: 20px; /* Replace absolute positioning */
+header img {
+  max-height: 60px;
 }
 
 nav {
-    display: flex; /* Enables Flexbox */
-    justify-content: center; /* Centers the items horizontally */
-    align-items: center; /* Aligns items vertically */
-    gap: 20px; /* Adds space between items */
-  }
-  
-  nav ul {
-    list-style: none; /* Removes default list styling */
-    margin: 0;
-    padding: 0;
-    display: flex; /* Ensures the `<ul>` uses Flexbox */
-  }
-  
-  nav ul li {
-    margin: 0;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
 
 nav a {
-    text-decoration: none;
-    color: var(--primary-color);
-    padding: 10px;
-    transition: color 0.3s; /* Add hover effect */
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: var(--padding);
+  transition: color 0.3s;
 }
 
 nav a:hover {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+/* Hero Section */
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: var(--padding);
+}
+
+#hero img {
+  width: 100%;
+  height: auto;
+}
+
+#hero article {
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--primary-color);
+  padding: var(--padding);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
 }
 
 
