@@ -12,23 +12,28 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--text-color);
-  background-color: var(--background-color);
-  margin: 0;
+  margin: 0, auto;
   padding: 0;
+  width: 1200px;
+  
 }
 
 /* Header Styles */
 header {
-  display: flex; /* Simplified layout with Flexbox */
-  justify-content: space-between;
+  display: grid; 
+  grid-template-columns: 120px auto;
   align-items: center;
+  border-bottom: 1px solid #ccc;
+  max-width: 1000px;
   padding: var(--padding);
   background: var(--primary-color);
   color: var(--secondary-color);
+
+
 }
 
 header img {
-  max-height: 60px;
+  height: 60px;
 }
 
 nav {
@@ -37,7 +42,7 @@ nav {
   align-items: center;
   gap: 20px;
 }
-
+/* Deals with link text*/
 nav a {
   text-decoration: none;
   color: var(--secondary-color);
@@ -74,13 +79,32 @@ nav a:hover {
   font-size: 2.5rem;
   text-align: center;
 }
+/*##########################################################################*/
 
 /* History Section */
-#history {
+#history {  /* Dealing with 3 parts for history*/
+  display: grid;
+  grid-column: 1/6;
+  justify-content: center;
+  padding: 20px var(--padding);
+}
+#images {  /* Dealing with 3 parts for history*/
+  display: grid;
+  grid-column: 1/6;
+  justify-content: end;
   padding: 20px var(--padding);
 }
 
-#history img {
+#sentence {  /* Dealing with 3 parts for history*/
+  display: grid;
+  
+  justify-content: start;
+  justify-content: end;
+  padding: 20px var(--padding);
+}
+
+.images img {
+  
   max-width: 100%;
   height: auto;
   margin: 20px auto;
@@ -89,25 +113,27 @@ nav a:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#history p {
+.history p {
+  
   line-height: 1.8;
   margin: 20px 0;
   text-align: justify;
 }
+/*##########################################################################*/
 
 /* Adventure Section */
-#adventure {
+.adventure {
   padding: 20px var(--padding);
 }
 
-#adventure div {
+.adventure div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   text-align: center;
 }
 
-#adventure img {
+.adventure img {
   width: 100%;
   height: auto;
   border-radius: 10px;
