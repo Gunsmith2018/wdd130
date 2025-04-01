@@ -84,27 +84,17 @@ nav a:hover {
 /* History Section */
 #history {  /* Dealing with 3 parts for history*/
   display: grid;
-  grid-column: 1/6;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   padding: 20px var(--padding);
 }
-#images {  /* Dealing with 3 parts for history*/
-  display: grid;
-  grid-column: 1/6;
-  justify-content: end;
-  padding: 20px var(--padding);
-}
-
-#sentence {  /* Dealing with 3 parts for history*/
-  display: grid;
-  
-  justify-content: start;
-  justify-content: end;
-  padding: 20px var(--padding);
+#history h2{
+  grid-column: 1/4;
+  text-align: center;
 }
 
 .images img {
-  
+
   max-width: 100%;
   height: auto;
   margin: 20px auto;
@@ -114,7 +104,8 @@ nav a:hover {
 }
 
 .history p {
-  
+  display: flex;
+  align-items: center;
   line-height: 1.8;
   margin: 20px 0;
   text-align: justify;
@@ -122,48 +113,51 @@ nav a:hover {
 /*##########################################################################*/
 
 /* Adventure Section */
-.adventure {
-  padding: 20px var(--padding);
-}
 
-.adventure div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+/*This part is causing errors with the previous section for some reason. */
+div {
+  display: flex;
+  flex-direction: row; /* Aligns items in a row */
+  gap: 20px; /* Adds space between figures */
+  justify-content: space-between; /* Optional: Adjusts spacing within the row */
+}
+figcaption{
   text-align: center;
+
+}
+.figure_flex{
+  display: flex;
 }
 
-.adventure img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+figure img{
+  width: 100px;
 }
-
-#adventure img:hover {
-  transform: scale(1.05);
+figure {
+  padding: 0;
+  margin:0;
 }
 
 /* Footer Styles */
 footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 10px;
   background: var(--primary-color);
   color: var(--secondary-color);
+  width: 100%;
+  position: fixed;
+  bottom:0;
+  left: 0;
 }
 
 footer a {
   margin: 5px;
-  transition: transform 0.3s;
+  transition: scale(1.2);
 }
 
-footer a:hover {
-  transform: scale(1.2);
-}
+
 
 footer img {
   height: 30px;
