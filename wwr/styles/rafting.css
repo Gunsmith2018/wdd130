@@ -40,7 +40,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 20px;
+  gap: 5px;
 }
 /* Deals with link text*/
 nav a {
@@ -60,23 +60,23 @@ nav a:hover {
 /* Hero Section */
 #hero {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   gap: 20px;
-  padding: 40px var(--padding);
+  padding: 20px var(--padding);
   background: var(--primary-color);
   color: var(--secondary-color);
 }
 
 #hero img {
-  width: 100%;
+  width: 500px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 #hero h1 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   text-align: center;
 }
 /*##########################################################################*/
@@ -86,7 +86,7 @@ nav a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
-  padding: 20px var(--padding);
+  padding: 5px var(--padding);
 }
 #history h2{
   grid-column: 1/4;
@@ -94,19 +94,18 @@ nav a:hover {
 }
 
 .images img {
-
-  max-width: 100%;
+  max-width: 100px;
   height: auto;
-  margin: 20px auto;
+  margin: 10px auto;
   display: block;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .history p {
   display: flex;
   align-items: center;
-  line-height: 1.8;
+  line-height: 1.5;
   margin: 20px 0;
   text-align: justify;
 }
@@ -119,7 +118,7 @@ div {
   display: flex;
   flex-direction: row; /* Aligns items in a row */
   gap: 20px; /* Adds space between figures */
-  justify-content: space-between; /* Optional: Adjusts spacing within the row */
+  justify-content: space-around; /* Optional: Adjusts spacing within the row */
 }
 figcaption{
   text-align: center;
@@ -130,7 +129,7 @@ figcaption{
 }
 
 figure img{
-  width: 100px;
+  width: 200px;
 }
 figure {
   padding: 0;
