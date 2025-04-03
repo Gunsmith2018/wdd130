@@ -12,9 +12,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--text-color);
-  margin: 0, auto;
+  margin: 0 auto;
   padding: 0;
-  width: 1200px;
   
 }
 
@@ -25,6 +24,7 @@ header {
   align-items: center;
   border-bottom: 1px solid #ccc;
   max-width: 1000px;
+  margin: auto;
   padding: var(--padding);
   background: var(--primary-color);
   color: var(--secondary-color);
