@@ -5,7 +5,10 @@
   --text-color: #333333; /* Dark Gray for better contrast */
   --background-color: #f4f4f4; /* Light Gray for subtle background */
   --accent-color: #ff9800; /* Bright accent for highlights */
-  --padding: 10px;
+}
+/* Section a may need to be removed*/
+a {
+  text-decoration: none;
 }
 
 /* General Styles */
@@ -14,6 +17,7 @@ body {
   color: var(--text-color);
   margin: 0 auto;
   padding: 0;
+  width: 1000px;
   
 }
 
@@ -58,27 +62,27 @@ nav a:hover {
 }
 
 /* Hero Section */
-#hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  gap: 20px;
-  padding: 20px var(--padding);
-  background: var(--primary-color);
-  color: var(--secondary-color);
+
+
+.hero{
+color: var(--accent-color);
 }
 
-#hero img {
-  width: 500px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
 
-#hero h1 {
+  }
+
+.hero h1 {
   font-size: 2.0rem;
   text-align: center;
-}
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  }
+
 /*##########################################################################*/
 
 /* History Section */
@@ -93,28 +97,24 @@ nav a:hover {
   text-align: center;
 }
 
-.images img {
-  max-width: 100px;
-  height: auto;
-  margin: 10px auto;
+img {
   display: block;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
 }
 
 .history p {
   display: flex;
   align-items: center;
   line-height: 1.5;
-  margin: 20px 0;
+  margin: auto;
   text-align: justify;
 }
 /*##########################################################################*/
 
 /* Adventure Section */
 
-/*This part is causing errors with the previous section for some reason. */
-div {
+.image_flex {
   display: flex;
   flex-direction: row; /* Aligns items in a row */
   gap: 20px; /* Adds space between figures */
