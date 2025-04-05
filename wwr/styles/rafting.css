@@ -4,7 +4,7 @@
   --secondary-color: #ffffff; /* White for better readability */
   --text-color: #333333; /* Dark Gray for better contrast */
   --background-color: #f4f4f4; /* Light Gray for subtle background */
-  --accent-color: #ff9800; /* Bright accent for highlights */
+  --accent-color: #ff0000; /* Bright accent for highlights */
 }
 
 /* General Styles */
@@ -59,6 +59,7 @@ nav a:hover {
 /* Hero Section */
 
 .hero{
+  position: relative;
 color: var(--accent-color);
 }
 
@@ -70,18 +71,23 @@ color: var(--accent-color);
   }
 
 .hero h1 {
-  font-size: 2.0rem;
-  text-align: center;
-  position: absolute;
-  top: 100px;
-  right: 120px;
+  position: absolute; /* Allows precise placement */
+  top: 10px;          /* Distance from the top edge */
+  right: 10px;        /* Distance from the right edge */
+  color: var(--accent-color); /* Ensure good visibility */
+  font-size: 2.5rem;  /* Adjust font size as needed */
+  text-align: right;
+
   }
   #paragraph{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    color: var(--accent-color);
     font-size: 2.0rem;
-  text-align: center;
-  position: absolute;
-  top: 140px;
-  right: -90;
+    text-align: left;
+
+
   }
 
 /*##########################################################################*/
@@ -108,29 +114,25 @@ border-radius: 5px;
 
 }
 
-#p1 {
+p {
   display: flex;
   align-items: center;
   line-height: 1.5;
   margin: 20px 0;
   text-align: justify;
 }
-#p2{
-  display: flex;
-  align-items: center;
-  line-height: 1.5;
-  margin: 20px 0;
-  text-align: justify;
-}
+
 /*##########################################################################*/
 
 /* Adventure Section */
 
 .image_flex {
 display: flex;
-flex-direction: row; 
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
 gap: 20;
-justify-content: space-around;
+
 }
 
 figcaption{
@@ -147,9 +149,15 @@ figure img {
 
 /* Footer Styles */
 footer {
+  display: flex;
+  justify-content: flex-end;
   align-items: flex-end;
-  justify-content: center;
-  flex-direction: row-reverse;
+  flex-direction: column;
+  position: relative;
+  height: 150px;
 
-
+}
+.footer-img {
+  width: 50px;
+  height: auto;
 }
