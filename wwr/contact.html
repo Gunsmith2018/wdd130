@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">">
   <!-- Lick to CSS file-->
-  <link rel="stylesheet" href="styles/rafting.css"> 
+  <link rel="stylesheet" href="styles/contact_rafting.css"> 
 </head>
 <!---->
 <body>
@@ -34,15 +34,35 @@
     <div class="hero">
       <img src="images/white_water_rafting_background.png" alt="Rafting Adventure">
         <h1>Colorado White water Rafting</h1>
-        <article id="paragraph">
-          <p>Who are we?</p>
+        <article class="paragraph">
+          <p>Phone number: 970-9945-8477</p>
+
+          <p>Address: 2000 Devereux Rd, Glenwood Spring, CO 81601</p>
+            
+          <p>Email: reservations@coloradowhitewaterrafting.com</p>
+          <div id="map">  <!-- I have no clue why this is acting this-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17401.246340795537!2d-107.35959797932242!3d39.55656746879587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8741096248b0b099%3A0x6835dde86c877c52!2sWhitewater%20Rafting%2C%20LLC!5e0!3m2!1sen!2sus!4v1744238387762!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </article>
       </div>
     <section id="history">
         <h2>History</h2>
-        <p>Founded in [Year], our company has been dedicated to providing exciting white water rafting experiences for people of all skill levels.</p>
-        <img src="images/happy_wwr.png" alt="Happy Client">
-        <p >Founded in [Year], our company has been dedicated to providing exciting white water rafting experiences for people of all skill levels.</p>
+        <form>
+          <fieldset>
+            <legend>Contact Information</legend>
+            <label for="fullname">Full Name:</label>
+            <input type="'text" id="fullname" name="fullname">
+            <label for="useremail">Email:</label>
+            <input type="email" id="useremail" name="useremail">
+          </fieldset>
+          <img src="images/happy_wwr.png" alt="Happy Client">
+          <fieldset>
+            <legend>Questions</legend>
+            <input type="radio">
+            <label for="feedback">Please choose one of the options below for inquiries:</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder=""></textarea>
+          </fieldset>
+        </form>
       </section>
 <!--###########################################################################-->
     <!-- Adventure Section -->
