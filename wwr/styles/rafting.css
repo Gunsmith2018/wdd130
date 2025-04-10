@@ -164,3 +164,16 @@ footer {
   width: 50px;
   height: auto;
 }
+
+/* Contacts */
+
+.contact div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 200px;
+
+}
+
+.contact iframe{
+  border: 0;
+}
