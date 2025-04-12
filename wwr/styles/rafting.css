@@ -129,7 +129,7 @@ p {
 display: flex;
 justify-content: center;
 align-items: center;
-gap: 20;
+gap: 20px;
 width: 100%;
 }
 
@@ -190,7 +190,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20;
+  gap: 20px;
   max-width: 100%;
 }
 h2{
