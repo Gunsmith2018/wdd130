@@ -4,7 +4,7 @@
   --secondary-color: #ffffff; /* White for better readability */
   --text-color: #333333; /* Dark Gray for better contrast */
   --background-color: #f4f4f4; /* Light Gray for subtle background */
-  --accent-color: #ff0000; /* Bright accent for highlights */
+  --accent-color: #17b6ae; /* Bright accent for highlights */
 }
 
 /* General Styles */
@@ -58,37 +58,65 @@ nav a:hover {
 }
 /* Hero Section */
 
-.hero{
+.hero {
   position: relative;
   color: var(--accent-color);
 }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
 
-  }
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Section for Image Overlap and Content */
+.top-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-hero img {
+  position: absolute;
+  top: 200px; /* Adjust overlap height */
+  right: 50px; /* Place overlapping on the right side */
+  width: auto;
+  max-width: 40%; /* Size the bottom image appropriately */
+}
 
 .hero h1 {
-  position: absolute; /* Allows precise placement */
-  top: 10px;          /* Distance from the top edge */
-  right: 10px;        /* Distance from the right edge */
-  color: var(--accent-color); /* Ensure good visibility */
-  font-size: 2.5rem;  /* Adjust font size as needed */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--accent-color);
+  top: 200;
+  font-size: 2.5rem;
   text-align: right;
+}
 
-  }
-  #paragraph{
-    position: absolute;
-    top: 200px;
-    left: 100px;
-    color: var(--accent-color);
-    font-size: 2.0rem;
-    text-align: left;
+.content p{
+  position: absolute;
+  top: 150px;
+  left: 10px;
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  text-align: right;
+  max-width: 500px;
+}
 
+/* Paragraph Styling */
+#paragraph {
+  position: absolute;
+  top: 150px; /* Adjust placement relative to the bottom image */
+  left: 50px; /* Place the paragraph on the left side */
+  color: var(--accent-color);
+  font-size: 1rem;
+  text-align: left;
+}
 
-  }
 
 /*##########################################################################*/
 
