@@ -194,7 +194,6 @@ footer {
 }
 
 /* Contacts */
-
 .contact div{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -211,6 +210,27 @@ footer {
 
 }
 
+.contact h2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 100%;
+}
+
+img{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 100%;
+}
+
+p{
+  
+}
 
 /* Trips */
 
