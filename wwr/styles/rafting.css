@@ -1,8 +1,8 @@
 :root{
-  --primary-color:48BEFF;
-  --secondary-color:14453D;
-  --accent1-color:43C59E;
-  --accent2-color:3D7068;
+  --primary-color:#48BEFF;
+  --secondary-color:#14453D;
+  --accent1-color:#43C59E;
+  --accent2-color:#3D7068;
   --heading-font:"Roboto";
   --body-font:"Montserrat" ;
 }
@@ -30,7 +30,7 @@ header, main, footer {
 
 h1, h2 {
   font-family: var(--heading-font);
-  color: var();
+  color: var(--heading-font);
 }
 
 nav, p, section, article {
