@@ -1,15 +1,19 @@
-:root{
-  --primary-color:#48BEFF;
-  --secondary-color:#14453D;
-  --accent1-color:#43C59E;
-  --accent2-color:#3D7068;
-  --heading-font:"Roboto";
-  --body-font:"Montserrat" ;
+:root {
+  --primary-color: #48BEFF;
+  --secondary-color: #14453D;
+  --accent1-color: #43C59E;
+  --accent2-color: #3D7068;
+  --heading-font: "Roboto";
+  --body-font: "Montserrat";
 }
 
 header {
   background-color: var(--primary-color);
   color: var(--accent2-color);
+
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+
 }
 
 * {
@@ -23,20 +27,42 @@ body {
   color: var(--accent1-color);
 }
 
-header, main, footer {
+header,
+main,
+footer {
   width: 840px;
   margin: 0 auto;
 }
 
-h1, h2 {
+
+h1,
+h2 {
   font-family: var(--heading-font--);
   color: var(--accent1-color--);
 }
 
-nav, p, section, article {
+h1 {
+  display: grid;
+  grid-column-start: 3;
+  grid-column-end: 6;
+}
+
+nav,
+p,
+section,
+article {
   margin: 16px;
   padding: 8px;
 }
+
+nav {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
+}
+
 
 .socialmedia a {
   text-decoration: none;
@@ -53,14 +79,15 @@ nav, p, section, article {
 }
 
 h1 {
-  position: absolute;
+
   top: 20px;
   width: 100%;
   padding: 16px;
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: #fff; /* white text - make sure there is enough contrast with the background-color */
+  color: #fff;
+  /* white text - make sure there is enough contrast with the background-color */
 }
 
 .hero article img {
