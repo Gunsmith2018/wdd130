@@ -1,10 +1,10 @@
-:root{
-  --primary-color:#48BEFF;
-  --secondary-color:#14453D;
-  --accent1-color:#43C59E;
-  --accent2-color:#3D7068;
-  --heading-font:"Roboto";
-  --body-font:"Montserrat" ;
+:root {
+  --primary-color: #48BEFF;
+  --secondary-color: #14453D;
+  --accent1-color: #43C59E;
+  --accent2-color: #3D7068;
+  --heading-font: "Roboto";
+  --body-font: "Montserrat";
 }
 
 header {
@@ -13,11 +13,11 @@ header {
 
   display: grid;
   grid-template-columns: auto 1fr;
-  align-items: center;
-  padding: 0%;
+  align-items: end;
   width: 100px;
   margin: auto;
 }
+
 
 * {
   margin: 0;
@@ -30,45 +30,46 @@ body {
   color: var(--accent1-color);
 }
 
-header, main, footer {
+header,
+main,
+footer {
   width: 840px;
   margin: 0 auto;
 }
 
 
-h1, h2 {
-  font-family: var(--heading-font--);
-  color: var(--accent1-color--);
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
 }
-h1{
+
+h1 {
   display: grid;
-  grid-column-start:3 ;
+  grid-column-start: 3;
   grid-column-end: 6;
 }
 
-nav, p, section, article {
+nav,
+p,
+section,
+article {
   margin: 16px;
   padding: 8px;
 }
-nav{
-  grid-column-start: 3;
-  grid-column-end: 6;
-  display: flex;
-  justify-content: flex-end;
-  justify-content: space-around;
-}
 
+nav {
+  justify-self: end;
+}
 
 .socialmedia a {
   text-decoration: none;
-  
+
 }
 
 .title {
   position: relative;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+
 }
 
 .title img {
@@ -76,8 +77,16 @@ nav{
   width: 100%;
   height: auto;
 }
-.title h1{
-text-align: center;
+
+.title h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+
 }
 
 h1 {
@@ -86,57 +95,74 @@ h1 {
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: #fff; /* white text - make sure there is enough contrast with the background-color */
+  color: #fff;
+  /* white text - make sure there is enough contrast with the background-color */
 }
+
 /*=======Title=========*/
 .title article img {
   display: flex;
 
 }
-.title article p{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row-reverse;
-  align-items: center;
-  text-align: left;
+
+.title article {
+  position: absolute;
+  top: 100px;
+  background-color: var(--secondary-color);
+  opacity: 0.7;
 }
+
 /*========== Hero ============*/
-.hero{
+.hero {
   display: grid;
   grid-template-columns: auto 1fr 1fr 1fr;
+  grid-template-rows: auto 2fr;
+
 }
-.hero h2{
+
+.hero h2 {
+  display: flex;
+  justify-content: center;
+
+}
+
+.hero p {
+  display: flex;
+  justify-content: flex-start;
   text-align: center;
 }
-.hero img{
+
+.hero img {
   display: flex;
   justify-content: center;
   width: 100px;
 }
+
 /*=============== Adventure ==================*/
-.journy {
+.journy div h3 {
   text-align: center;
+}
+
+.journy div {
   display: flex;
-  justify-content: center;
-  width: 100px;
-
-}
-.journy img{
-  width: 100px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
-
-
-
+.journy div img {
+  width: 100px;
+  height: auto;
+}
 
 /*==================Footer==============================*/
-.socialmedia{
+.socialmedia {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 
 }
 
-.socialmedia img{
+.socialmedia img {
   width: 40px;
 }
