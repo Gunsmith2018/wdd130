@@ -1,10 +1,10 @@
-:root {
-  --primary-color: #48BEFF;
-  --secondary-color: #14453D;
-  --accent1-color: #43C59E;
-  --accent2-color: #3D7068;
-  --heading-font: "Roboto";
-  --body-font: "Montserrat";
+:root{
+  --primary-color:#48BEFF;
+  --secondary-color:#14453D;
+  --accent1-color:#43C59E;
+  --accent2-color:#3D7068;
+  --heading-font:"Roboto";
+  --body-font:"Montserrat" ;
 }
 
 header {
@@ -12,8 +12,11 @@ header {
   color: var(--accent2-color);
 
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 0%;
+  width: 100px;
+  margin: auto;
 }
 
 * {
@@ -27,70 +30,113 @@ body {
   color: var(--accent1-color);
 }
 
-header,
-main,
-footer {
+header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
 
 
-h1,
-h2 {
+h1, h2 {
   font-family: var(--heading-font--);
   color: var(--accent1-color--);
 }
-
-h1 {
+h1{
   display: grid;
-  grid-column-start: 3;
+  grid-column-start:3 ;
   grid-column-end: 6;
 }
 
-nav,
-p,
-section,
-article {
+nav, p, section, article {
   margin: 16px;
   padding: 8px;
 }
-
-nav {
+nav{
   grid-column-start: 3;
   grid-column-end: 6;
   display: flex;
   justify-content: flex-end;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 
 .socialmedia a {
   text-decoration: none;
+  
 }
 
-.hero {
+.title {
   position: relative;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
-.hero img {
+.title img {
   display: block;
   width: 100%;
   height: auto;
 }
+.title h1{
+text-align: center;
+}
 
 h1 {
-
-  top: 20px;
-  width: 100%;
-  padding: 16px;
+  width: auto;
+  padding: 0px;
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: #fff;
-  /* white text - make sure there is enough contrast with the background-color */
+  color: #fff; /* white text - make sure there is enough contrast with the background-color */
+}
+/*=======Title=========*/
+.title article img {
+  display: flex;
+
+}
+.title article p{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-align: left;
+}
+/*========== Hero ============*/
+.hero{
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 1fr;
+}
+.hero h2{
+  text-align: center;
+}
+.hero img{
+  display: flex;
+  justify-content: center;
+  width: 100px;
+}
+/*=============== Adventure ==================*/
+.journy {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+
+}
+.journy img{
+  width: 100px;
 }
 
-.hero article img {
-  float: right;
-  width: 125px;
+
+
+
+
+/*==================Footer==============================*/
+.socialmedia{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.socialmedia img{
+  width: 40px;
 }
