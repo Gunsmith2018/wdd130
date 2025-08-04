@@ -166,3 +166,25 @@ h1 {
 .socialmedia img {
   width: 40px;
 }
+
+/*================================ Contact css ==============================================*/
+.contact_info {
+  display: flex;
+  justify-items: flex-start;
+
+}
+
+.contact_info aside p{
+  display: flex;
+  justify-items: flex-start;
+}
+
+.team img{
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  grid-template-rows: 20% 20% 20%;
+  grid-column: 1/4;
+
+  text-align: center;
+  width: 250px;
+}
